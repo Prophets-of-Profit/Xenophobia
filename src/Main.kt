@@ -1,4 +1,5 @@
+import kotlin.browser.window
 
 fun main() {
-	println("Hello world!")
+	window.onresize =  { resizeProcedure() }
 }
