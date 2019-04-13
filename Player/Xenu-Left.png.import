@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Xenu.png-3fd345f641ec72f98bcdb2cec3b8cde4.stex"
+path="res://.import/Xenu-Left.png-4aaa2e84ec3a4d439916e2cb6a004ca7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Xenu.png"
-dest_files=[ "res://.import/Xenu.png-3fd345f641ec72f98bcdb2cec3b8cde4.stex" ]
+source_file="res://Player/Xenu-Left.png"
+dest_files=[ "res://.import/Xenu-Left.png-4aaa2e84ec3a4d439916e2cb6a004ca7.stex" ]
 
 [params]
 
