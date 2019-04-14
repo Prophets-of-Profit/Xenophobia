@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 32, 32 )
+
+[sub_resource type="StreamTexture" id=2]
+flags = 4
+load_path = "res://.import/Fence.png-082e7366af57eed3c43026337748ecb4.stex"
+
+[node name="Fence" type="StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = SubResource( 2 )
+
