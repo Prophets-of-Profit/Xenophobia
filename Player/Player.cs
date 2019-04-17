@@ -46,17 +46,17 @@ public class Player : KinematicBody2D
 			return;
 		}
 		newTexturePath += ".png";
-		((Sprite) (this.FindNode("PlayerSprite"))).SetTexture(ResourceLoader.Load(newTexturePath) as Texture);
+		(this.FindNode("PlayerSprite") as Sprite).SetTexture(ResourceLoader.Load(newTexturePath) as Texture);
 	}
 
 	/**
 	 * On ready, the player shrinks its size slightly so that it can fit between blocks/tiles more easily
 	 */
-    public override void _Ready()
-    {
-        RectangleShape2D playerCollider = (RectangleShape2D) (((CollisionShape2D) this.FindNode("PlayerCollider")).GetShape());
+	public override void _Ready()
+	{
+		RectangleShape2D playerCollider = (this.FindNode("PlayerCollider") as CollisionShape2D).GetShape() as RectangleShape2D;
 		playerCollider.SetExtents(playerCollider.GetExtents() - new Vector2(2, 2));
-    }
+	}
 
 	/**
 	 * Moves the player by the amount specified by its velocity
