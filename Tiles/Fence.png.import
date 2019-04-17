@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Fence.png-082e7366af57eed3c43026337748ecb4.stex"
+path="res://.import/Fence.png-3d982fdba15465ad8cb50a35029dad02.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Tiles/Fence.png"
-dest_files=[ "res://.import/Fence.png-082e7366af57eed3c43026337748ecb4.stex" ]
+source_file="res://tiles/Fence.png"
+dest_files=[ "res://.import/Fence.png-3d982fdba15465ad8cb50a35029dad02.stex" ]
 
 [params]
 

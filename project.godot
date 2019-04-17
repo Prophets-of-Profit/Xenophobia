@@ -16,7 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Xenophobia"
-run/main_scene="res://Rooms/PlayerUnknownsTestingGrounds.tscn"
+run/main_scene="res://rooms/PlayerUnknownsTestingGrounds.tscn"
 config/icon="res://icon.png"
 
 [display]

@@ -1,6 +1,6 @@
 [gd_resource type="TileSet" load_steps=3 format=2]
 
-[sub_resource type="ConvexPolygonShape2D" id=1]
+[sub_resource type="ConvexPolygonShape2D" id=3]
 points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
 
 [sub_resource type="StreamTexture" id=2]
@@ -20,7 +20,7 @@ load_path = "res://.import/Fence.png-082e7366af57eed3c43026337748ecb4.stex"
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 1 ),
+"shape": SubResource( 3 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 0/z_index = 0

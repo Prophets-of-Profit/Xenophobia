@@ -11,3 +11,4 @@ export_presets.cfg
 *~
 
 .DS_Store
+.idea/
