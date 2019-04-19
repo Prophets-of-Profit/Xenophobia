@@ -3,10 +3,6 @@
 [ext_resource path="res://tiles/Fence.tres" type="TileSet" id=1]
 [ext_resource path="res://player/Player.tscn" type="PackedScene" id=2]
 
-
-
-
-
 [node name="PlayerUnknownsTestingGrounds" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]

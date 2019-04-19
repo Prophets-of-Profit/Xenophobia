@@ -42,7 +42,7 @@ public class Player : KinematicBody2D {
 	 */
 	public override void _Ready() {
 		RectangleShape2D playerCollider = (this.FindNode("PlayerCollider") as CollisionShape2D)?.GetShape() as RectangleShape2D;
-		playerCollider?.SetExtents(playerCollider.GetExtents() - new Vector2(2, 2));
+		playerCollider?.SetExtents(playerCollider.GetExtents() - 5 * new Vector2(1, 1));
 	}
 
 	/**
@@ -61,6 +61,9 @@ public class Player : KinematicBody2D {
 		this._velocity *= MaxSpeed;
 		if (this._velocity.LengthSquared() >= Math.Pow(MaxSpeed, 2)) {
 			this._velocity = this._velocity.Normalized() * MaxSpeed;
+		}
+		if (Input.IsActionPressed("attack")) {
+			GD.Print("An attack just happened!"); //TODO: do something
 		}
 		this.UpdateSprite();
 	}
