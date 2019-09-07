@@ -7,7 +7,7 @@ using UnityEngine;
  */
 public class PlayerMovement : MonoBehaviour {
 
-	public float maxSpeed = 10f;
+	public float maxSpeed = 5f;
 	private Vector2 _velocity;
 	private Rigidbody2D _body;
 
@@ -23,7 +23,7 @@ public class PlayerMovement : MonoBehaviour {
 	 */
     public void Update() {
 	    this._velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
-	    this._body.MovePosition(this._body.position + this._velocity * Time.deltaTime);
+	    this._body.MovePosition(this._body.position + this.maxSpeed * Time.deltaTime * this._velocity);
     }
     
 }
