@@ -4,15 +4,18 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /**
- * A camera that LERPs to its target to follow the target smoothly
+ * A camera that SmoothDamps to its target to follow the target smoothly
  */
 public class CameraFollow : MonoBehaviour {
 	
 	//The target that this camera should follow
 	public Transform target;
+	
+	//How much time it takes the camera to reach the player
+	public float smoothTime = 0.125f;
 
-	//How fast the camera catches up to the target
-	public float smoothing;
+	//How fast this camera is moving
+	private Vector2 _velocity;
 	
 	/**
 	 * Moves closer to target if necessary
@@ -27,7 +30,7 @@ public class CameraFollow : MonoBehaviour {
 			return;
 		}
 
-		Vector2 newPosition = Vector2.Lerp(selfPosition, targetPosition, this.smoothing);
+		Vector2 newPosition = Vector2.SmoothDamp(selfPosition, targetPosition, ref this._velocity, this.smoothTime);
 		this.transform.position = new Vector3(newPosition.x, newPosition.y, this.transform.position.z);
 
 	}

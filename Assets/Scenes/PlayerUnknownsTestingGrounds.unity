@@ -234,7 +234,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1891935726}
-  smoothing: 0.1
+  smoothTime: 0.125
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
